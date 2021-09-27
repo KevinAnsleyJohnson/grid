@@ -46,7 +46,7 @@ pub mod locations;
 pub mod organizations;
 #[cfg(feature = "product")]
 pub mod products;
-#[cfg(any(feature = "purchase-order"))]
+#[cfg(feature = "purchase-order")]
 pub mod purchase_orders;
 #[cfg(feature = "pike")]
 pub mod roles;

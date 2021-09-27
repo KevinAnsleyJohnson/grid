@@ -25,7 +25,7 @@ ARGS
 ====
 
 `IDENTIFIER`
-: Either a UUID or an alternate ID of a purchase order.
+: Either a UID or an alternate ID of a purchase order.
 
 FLAGS
 =====
@@ -74,25 +74,23 @@ EXAMPLES
 The command
 
 ```
-$ grid po show --org=crgl 82urioz098aui3871uc
+$ grid po show --org=crgl 809832081
 ```
 
 will display the current revision of the accepted version of the purchase order
-with UUID `82urioz098aui3871uc` in human-readable format. It will display
+with UID `809832081` in human-readable format. It will display
 output like the following:
 
 ```
-Purchase Order:
-    organization     crgl (Cargill Incorporated)
-    uuid             82urioz098aui3871uc
-    purchase_order   809832081
-    workflow status  Confirmed
-    is closed        False
-    created          <datetime string>
+Purchase Order 809832081:
+    Organization     crgl (Cargill Incorporated)
+    Workflow status  Confirmed
+    Created At       <datetime string>
+    Closed           false
 
 Accepted Version (v3):
     workflow_status  Editable
-    draft            False
+    draft            false
     latest revision  4
 
 Revision 4:
